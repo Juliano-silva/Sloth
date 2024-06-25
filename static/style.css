@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #11010a;
+    color: white;
+    text-align: center;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+input{
+    all: unset;
+    margin: auto;
+    margin-top: 2vh;
+    padding: 2vh;
+    padding-bottom: 1vh;
+    text-align: center;
+    width: 70vh;
+    background-color: #1c162e;
+    color: white;
+    border-bottom: 0.3vh solid #6132E3;
+}
+
+input::placeholder{
+    color: white;
+}
+
+#Body_Input{
+    background-color: rgba(30, 1, 31, 0.79);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    overflow: auto;
+    display: none;
+}
+
+button,#Diminuir_Inputs{
+    all: unset;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-left: 2vh;
+    margin-top: 1vh;
+    padding: 1vh;
+    width: 20vh;
+    font-size: 2vh;
+    text-align: center;
+    font-weight: bold;
+    color: yellow;
+    border: 0.3vh solid #7847ff;
+    cursor: pointer;
+    background-color: #1c162e;
+}
+
+#Enviar{
+    margin-top: 30vh;
+}
+
+#Editar{
+    display: none;
+}
+
+#All_Delete{
+    margin-top: 20vh;
+}
+
+#Diminuir_Inputs{
+    margin-top: 10vh;
+}
+
+#Btn_Open_Close{
+    all: unset;
+    position: fixed;
+    top: 0;
+    cursor:pointer ;
+    font-size: 10vh;
+    right: 0;
+    margin-right: 2vh;
+    z-index: 8;
+}
+
+#Titulo{
+    font-size: 10vh;
+    padding: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+select{
+    all: unset;
+    border: 0.1vh solid white;
+    padding: 2vh;
+    margin-top: 2vh;
+}
+
+option{
+    background-color: #11010a;
+    cursor: pointer;
+}
+
+#Conteudo > div{
+    display: block;
+    overflow: auto;
+    border: 0.4vh solid ;
+    padding: 2vh;
+}
+
+:is(#Conteudo > div) > :is(h1,h2,h4,h6){
+    font-size: 3vh;
+    text-align: left;
+    margin-top: 2vh;
+    color: white;
+    text-shadow: 0.1vh 0.1vh 0.1vh black;
+}
+
+#Conteudo > div::-webkit-scrollbar{
+    width: 0px;
+}
+
+#Conteudo > div > select{
+    display: block;
+    left: 0;
+}
+
+#Conteudo > div > select:focus{
+    background-color: #230770;
+}
+
+#Conteudo > div > button{
+    all: unset;
+    padding: 1vh;
+    width: 20vh;
+    font-size: 2vh;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 0.3vh solid #230770;
+    cursor: pointer;
+    background-color: #3e2a79;
+    display: inline-block;
+}

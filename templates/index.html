@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button id="Btn_Open_Close">☰</button>
+    <h1 id="Titulo">Sloth</h1>
+    <div id="Body">
+      <div id="Body_Input" class="0">
+        <input type="text" placeholder="Colocar a Url" id="Url" required>
+        <div id="Conteudo_Input"></div>
+        <input type="text" placeholder="Colocar o Evento de click" id="Evento">
+        <button id="Add_Inputs">Adicionar uma Entradas +</button>
+        <button id="Diminuir_Inputs">Diminuir uma Entradas -</button>
+        <button id="All_Delete">Apagar Todas as Entradas</button>
+        <button id="Enviar" onclick="Enviar()">Inserir Itens</button>
+        <button id="Editar_Btn">Editar Itens</button>
+      </div>
+        <div id="Conteudo"></div>
+    </div>
+  </body>
+  <script src="../static/script.js"></script>
+</html>
